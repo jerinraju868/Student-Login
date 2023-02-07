@@ -1,4 +1,4 @@
-# Authentication
+# Student_Project
 
 ## Create virtualenvironment and setup
     python -m venv Env
@@ -32,7 +32,7 @@ then, save the setting.py
 ![Screenshot from 2023-02-06 00-23-39](https://user-images.githubusercontent.com/117073931/216839037-d4627694-248b-4349-9938-d37866156d27.png)
 
 
-# Create a model named as Usermodel
+# Create a model named as Stundent
 ## App/model.py
     from django.db import models
     from django.contrib.auth.models import User
@@ -56,7 +56,7 @@ add the credentials for the super user
 # run the server
     python manage.py runserver
 
-# Authentication/urls.py
+# Student_Project/urls.py
 
 ## Add App.urls in the Student_Project/urls.py
     from django.contrib import admin
@@ -247,7 +247,7 @@ save the Student_Project/urls.py
     </div>
     {% endblock content %}
 ### Browser View
-![Screenshot from 2023-02-06 00-20-51](https://user-images.githubusercontent.com/117073931/216838906-59e66bbb-9914-437d-841a-fb740b5ee524.png)
+![Screenshot from 2023-02-07 14-29-16](https://user-images.githubusercontent.com/117073931/217198795-511b548f-dde0-426d-8f38-3143cdba382d.png)
 
 
 ## Creating the function for login
@@ -307,7 +307,7 @@ save the Student_Project/urls.py
     </div>
     {% endblock content %}
 ### Browser View
-![Screenshot from 2023-02-06 00-14-56](https://user-images.githubusercontent.com/117073931/216838659-a3fd69a6-ed3b-4250-bd27-6c876da5a3ca.png)
+![Screenshot from 2023-02-07 14-31-02](https://user-images.githubusercontent.com/117073931/217199176-4c582259-d24d-4065-8ccd-9d05be15ef80.png)
 
 
 ## Creating the function for home
@@ -339,8 +339,7 @@ save the Student_Project/urls.py
     </div>
     {% endblock content %}
 ### Browser View
-![Screenshot from 2023-02-06 00-16-48](https://user-images.githubusercontent.com/117073931/216838728-f62ade86-1f9c-407d-be32-3cf8d0c52b7c.png)
-
+![Screenshot from 2023-02-07 14-30-31](https://user-images.githubusercontent.com/117073931/217199077-f1cf3650-51db-4797-8d6a-f54e34f81379.png)
 
 ## Creating the function for logout
 ### App/views.py
