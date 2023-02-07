@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Register</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container" style="display: flex;align-items: center;justify-content: center;">
+    <div class="card shadow" style="width:40%; height:auto;border-radius: 1rem;margin-top: 60px;">
+        <div class="card-title">
+            <h1 align="center" style="margin-top: 25px;font-family: Arial, Helvetica, sans-serif;">Registration Page </h1>
+        </div>
+        <div class="card-body">
+            <div class="error">
+                {% for message in messages %}
+                <p class="text-danger" style="font-style:italic">{{ message }}</p>
+                {% endfor %}
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <center>
+                    <input type="submit" class="btn btn-success" value="Register">
+                </center><br>
+                <div class="" style="text-align: center;">
+                    Already have an account.?
+                    <a href="{% url 'login' %}" style="font-style: italic;">Login</a>
+                </div><br>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

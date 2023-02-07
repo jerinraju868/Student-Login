@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Home</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container fluid" style="display:flex;justify-content: center;color: white;">
+    <div class="card shadow"  style="width:880px;height:550px;border-radius: 1rem;background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi_pu3-xUpS6-qUHs7oXrw40FC7_IWgFViZw&usqp=CAU);background-repeat: no-repeat;background-size: contain">
+        <div class="card-title">
+            <h1 align="center" style="margin-top: 25px; font-family: Arial, Helvetica, sans-serif;">Home Page </label>
+        </div>
+        <div class="card-body" style="text-align: right;">
+          <h1>Hai {{user.username}},</h1>
+          <h5>Welcome to Home page.</h5>
+        </div>
+    </div>
+</div>
+{% endblock content %}
